@@ -11,7 +11,7 @@ function expandAccord(project){
     $(projectContent).css({'display': 'grid'});
   }
   else if ($(projectContent).css('display') === 'grid') {
-    $(projectContent).css('display', 'none');
+    $(projectContent).animate({height: 'toggle'}, 'slow');
   }
 }
 // Sticky Navigation

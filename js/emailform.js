@@ -16,7 +16,7 @@ function emailDropdown(){
     $('#emailDropdown').css({'border-bottom': '1px solid #bbb'});
   }
   else{
-    $('#emailDropdown').css('display', 'none');
+    $('#emailDropdown').animate({height: 'toggle'}, 'slow')
   }
 }
 
