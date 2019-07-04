@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138423424-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138423424-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel='stylesheet' href='css/style.css'>
+  <link rel="shortcut icon" href="images/headericon-0.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
+  <title>John Van Dalsem's Portfolio</title>
+</head>
+
+<body>
+  <div class="main">
+    <!--Used for background image-->
+    <header>
+      <nav id="navbar">
+        <ul id='navcontainer'>
+          <li class='navitem' id='totop'><a href="#maincontent">Jump to content</a></li>
+          <li class='navitem'><a href="contact.html" class='currentlink'>Contact</a></li>
+          <li class='navitem'><a href="experience.html">About Me</a></li>
+          <li class='navitem'><a href="projects.html">Projects</a></li>
+          <li class='navitem'><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+  </div>
+  </header>
+  </div>
+  <div class='content' id='maincontent'>
+    <div id="emailModal" class = 'modal'>
+    <div class="modalContent">
+      <div class="modalHeader">
+        <span id="exitModal">&times;</span>
+        <h2>Note!</h2>
+      </div>
+      <div class="modalBody">
+        <p>I am only accepting messages from valid <strong>University of Michigan</strong> email addresses.</p>
+        <p>Make sure your email address contains <strong>'umich.edu'</strong></p>
+      </div>
+    </div>
+  </div>
+    <h1 id = 'contactWelcome'>A few ways to reach me..</h1>
+      <div id='contactContainer'>
+          <h2>Shoot me an Email! <i class="fas fa-caret-down" id='caretDown'></i></h2>
+        <div id='emailDropdown'>
+          <form action='https://formspree.io/jjvandal@umich.edu' method="POST" onsubmit='return validateForm()' id='emailForm'>
+            <label for="name">Name:<input type="text" name="name" placeholder="Your name.." required></label>
+            <label for="_replyto">Email: (Must be a valid 'umich.edu' email address.)<input type="email" name="_replyto" placeholder="Your email.." required></label>
+            <label for="subject">Subject: (Must be less than 80 characters.)<input type='text' name='subject' placeholder="Email subject.." required></label>
+            <label for="message">Message: <textarea name="message" placeholder="Message.." required></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </div>
+        <h2>Phone: 949-600-00**</h2>
+        <h2><a href='https://www.linkedin.com/in/john-van-dalsem-1771b1151' target="_blank" class='contacticon'>LinkedIn</a></h2>
+        <h2><a href='https://github.com/jvandalsem' target="_blank" class='contacticon'>Github</a></h2>
+        <h2><a href='www.Facebook.com' target="_blank" class="contacticon">Facebook</a></h2>
+  </div>
+  </div>
+  <footer>
+    <span>&#169; 2019 John Van Dalsem<br>
+      <a href="https://www.linkedin.com/in/john-van-dalsem-1771b1151/" target="none">LinkedIn |</a><a href="http://www.github.com/jvandalsem" target="none">Github</a></span>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+<script src="js/emailform.js"></script>
+
+</html>

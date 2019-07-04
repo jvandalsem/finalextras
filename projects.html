@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138423424-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138423424-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel='stylesheet' href='css/style.css'>
+  <link rel="shortcut icon" href="images/headericon-0.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
+  <title>John Van Dalsem's Portfolio</title>
+</head>
+
+<body>
+  <div class="main">
+    <!--Used for background image-->
+    <header>
+      <nav id="navbar">
+        <ul id='navcontainer'>
+          <li class='navitem' id='totop'><a href="#maincontent">Jump to content</a></li>
+          <li class='navitem'><a href="contact.html">Contact</a></li>
+          <li class='navitem'><a href="experience.html">About Me</a></li>
+          <li class='navitem'><a href="projects.html" class='currentlink'>Projects</a></li>
+          <li class='navitem'><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!--Still need to include links to Github repositories-->
+  <div class='content' id='maincontent'>
+    <h1 id='titleprojects'>John Van Dalsem's Projects</h1>
+    <div id = 'projectAccordion'>
+    <div class='projectItem'>
+      <div class = 'accordBox'>
+      <h2><i class="fas fa-chart-bar"></i>Social Media Tracker</h2><i class="fas fa-caret-down"></i>
+    </div>
+      <div class = 'projectContent'>
+      <div class='projectspec'>
+        <p>This project I sought to successfully utilize 5 API's into one program, and create visual representations of my own social media data. I was able to use the Google Maps, Google Mail, GroupMe, Facebook, and Instagram APIs to create a
+          rounded
+          look at the data, while storing it into an SQL database. I then sought to create visual outputs of the data I got from these 5 APIs, using the Pandas (left), Plotly (bottom left), and Matplotlib (bottom right) modules. I was able to
+          efficiently implement all of these tools and created a functional social media tracker. The raw code for this project can be found and downloaded below.</p>
+      </div>
+      <a href = 'https://github.com/jvandalsem/FinalProject' target="none">Check out the code.</a>
+      <div class='projectgallery'>
+        <img class='galleryitem' src="./images/smtracker1.png" alt="smtracker1">
+        <img class='galleryitem' src="./images/smtracker2.png" alt="smtracker2">
+        <img class='galleryitem' src="./images/smtracker3.png" alt="smtracker3">
+      </div>
+      </div>
+    </div>
+    <div class='projectItem'>
+      <div class = 'accordBox'>
+      <h2><i class="fas fa-cloud-moon-rain"></i>Weather AI Chat Bot </h2><i class="fas fa-caret-down"></i>
+    </div>
+      <div class = 'projectContent'>
+      <div class='projectspec'>
+        <p>This program is a creative artificial intelligence weather chat bot. Through the implementation of AIML files, I was able to successfully engage in conversation with the bot, as well as ask it some weather questions. As you can see, you
+          can
+          ask it basic queries, but can also ask about the weather and receive live forecast updates. The entire project was built in a Python text editor, with the help from Google and Darkskynet API's. The raw code for this project can be found
+          and
+          downloaded below.</p>
+      </div>
+      <a href = 'https://github.com/jvandalsem/' target="none">Check out the code.</a>
+      <div class='projectgallery'>
+        <img src="./images/chatbotexample.png" alt="smtracker2">
+      </div>
+    </div>
+    </div>
+    <div class='projectItem'>
+      <div class = 'accordBox'>
+      <h2><i class="fas fa-utensils"></i>Restaurant Review Site </h2><i class="fas fa-caret-down"></i>
+    </div>
+      <div class = 'projectContent'>
+      <div class='projectspec'>
+        <p>My program allows users to search and save restaurants located in Ann Arbor, and gets these restaurants' data from the Yelp Fusion API. Users then have the option to do a few other things with these searched and saved restaurants. ALL
+          users
+          can view ALL restaurants saved from ALL users, along with the rating and price range of the restaurant(from Yelp API). Registered and logged in users can make a collection of restaurants, and can include/select all previously saved
+          restaurants. Registered and logged in users can make a review about a restaurant/experience/meal, and sequentially rate the review on a scale from 1-5. Registered and logged in users can then view their own collections and reviews, and
+          perform
+          changes to both. Registered and logged in users can delete their own collections, and can update the rating of a restaurant review.</p>
+      </div>
+      <a href = 'https://github.com/jvandalsem/SI364Final' target="none">Check out the code.</a>
+      <div class='projectgallery'>
+        <img class='galleryitem' src="./images/resweb1.png" alt="resweb1">
+        <img class='galleryitem' src="./images/resweb3.png" alt="resweb3">
+        <img class='galleryitem' src="./images/resweb4.png" alt="resweb4">
+      </div>
+    </div>
+    </div>
+    <div class='projectItem'>
+      <div class = 'accordBox'>
+      <h2><i class="fas fa-football-ball"></i>NFL Weather and Odds Analysis </h2><i class="fas fa-caret-down"></i>
+    </div>
+      <div class = 'projectContent'>
+      <div class='projectspec'>
+        <p>My project​​ incorporates a dataset of NFL games that contains odds, scores, and weather from 1966 through the current 2018 season, and an NFL API from Sports Radar that gathers loads of live data from the NFL which also includes fields
+          like
+          games, odds, scores, and weather, from the years 2001-2018. My goal​​ was to join the two sets of data, to try and accurately determine NFL team regular season performances in specific weather conditions, based off of my own categorization
+          of
+          weather types. I will then use this data to see how often each team is ‘favored’ or chosen to win, prior to playing in each of these game conditions. I am looking at this comparison, because weather is usually a predicted variable, like
+          choosing a team winner.</p>
+      </div>
+      <a href = 'https://github.com/jvandalsem/' target="none">Check out the code.</a>
+      <div class='projectgallery'>
+        <img class='galleryitem' src="./images/nflwin.png" alt="nflwin">
+        <img class='galleryitem' src="./images/nfllos.png" alt="nfllos">
+        <img class='galleryitem' src="./images/nflcov.png" alt="nflwin">
+      </div>
+    </div>
+  </div>
+    <footer>
+      <span>&#169; 2019 John Van Dalsem<br>
+        <a href="https://www.linkedin.com/in/john-van-dalsem-1771b1151/" target="none">LinkedIn</a>|<a href="http://www.github.com/jvandalsem" target="none">Github</a></span>
+    </footer>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+<script src="js/projects.js"></script>
+</html>
