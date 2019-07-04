@@ -5,7 +5,7 @@ $(document).ready(function() {
     loop: false,
     delay: 90
   });
-  typewriter.typeString('Hello!').start().pauseFor(200).typeString('My name is Jack Van Dalsem.').pauseFor(800).typeString(' Welcome to my project portfolio.');
+  typewriter.typeString('Hello!').start().pauseFor(200).typeString(' My name is Jack Van Dalsem.').pauseFor(800).typeString(' Welcome to my project portfolio.');
 });
 
 
