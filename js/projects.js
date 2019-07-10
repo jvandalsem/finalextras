@@ -1,21 +1,21 @@
 // Projects Accordion
 var accordionElem = $('#projectAccordion').find('div.projectItem');
-console.log(accordionElem)
+console.log(accordionElem);
 Array.from(accordionElem).forEach((project) => {
   project.addEventListener('click', expandAccord);
 })
 function expandAccord(project){
   var projectContent = project.path[2].children[1];
   if ($(projectContent).css('display') === 'none'){
-    $(projectContent).animate({height: 'toggle'}, 'slow');
+    $(projectContent).animate({height: 'toggle', opacity: '1'}, 'slow');
     $(projectContent).css({'display': 'grid'});
   }
   else if ($(projectContent).css('display') === 'grid') {
-    $(projectContent).animate({height: 'toggle'}, 'slow');
+    $(projectContent).animate({height: 'toggle', opacity: '0.2'}, 'slow');
   }
 }
 // Sticky Navigation
-window.addEventListener('scroll', stickyNavbar)
+window.addEventListener('scroll', stickyNavbar);
 var navbar = document.getElementById("navcontainer");
 function stickyNavbar() {
   if (window.pageYOffset >= navbar.offsetTop) {
